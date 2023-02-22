@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://kit.fontawesome.com/ae97ef602e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/static/css/about_us.css" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container-fluid">
+        <div class="col-1 e-links">
+          <i class="fa-solid fa-bars"></i>
+          <ul class="side-menu">
+            <li><a href="/" class="e-link">home</a></li>
+            <li><a href="/search" class="e-link">products</a></li>
+            <li><a href="/about-us" class="e-link">about</a></li>
+            <li>
+              <a href="/contact-us" class="e-link">contact</a>
+            </li>
+            <li>
+              <a href="{{ url_for('cart') }}" class="e-link cart">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="{{ url_for('login') }}" class="e-link admin">
+                <i class="fa-solid fa-user user-icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="row navbar-container justify-content-end">
+          <div class="col-1"><a href="/" class="link">home</a></div>
+          <div class="col-1"><a href="/search" class="link">products</a></div>
+          <div class="col-1"><a href="/about-us" class="link">about</a></div>
+          <div class="col-1">
+            <a href="/contact-us" class="link">contact</a>
+          </div>
+          <div class="col-1 offset-2 cart-container">
+            <a href="{{ url_for('cart') }}" class="link">
+              <i class="fa-solid fa-cart-shopping cart-icon"></i>
+              <span class="cart-item-count">00</span></a
+            >
+          </div>
+          <div class="col-1">
+            <a href="{{ url_for('login') }}" class="link">
+              <i class="fa-solid fa-user user-icon"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid page-content">
+      <div class="row align-items-center justify-content-center first-part">
+        <div class="col-12 col-lg-6 col-md-12 col-sm-12 text-part">
+          <h2>About us</h2>
+          <p class="font-italic text-muted mb-4">
+            We are divided into 'the customer service team' and 'the logistics
+            team'.
+          </p>
+        </div>
+        <div class="col offset-1 image-part">
+          <img
+            src="https://bootstrapious.com/i/snippets/sn-about/illus.png"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center second-part">
+        <div
+          class="col-12 col-lg-6 col-md-12 col-sm-12 image-part order-2 order-lg-1"
+        >
+          <img
+            src="https://bootstrapious.com/i/snippets/sn-about/img-1.jpg"
+            alt=""
+            class="img-fluid mb-4 mb-lg-0"
+          />
+        </div>
+        <div
+          class="col-12 col-lg-6 col-md-12 col-sm-12 text-part order-1 order-lg-2"
+        >
+          <h2 class="font-weight-light">OUR HISTORY</h2>
+          <p class="font-italic text-muted mb-4">
+            We think daily, not about the furniture, but about our customers. We
+            understand how important it is to provide comfort in their homes,
+            but it is equally important that we do not want you to be happy.<br />
+            This approach has already led us to victories. Today, we work in 15
+            European countries and we want to expand the list every year we have
+            no plans to stop.
+          </p>
+          <a href="#" class="btn btn-light px-5 rounded-pill shadow-sm"
+            >Learn More</a
+          >
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center third-part">
+        <div class="col text-part">
+          <h2 class="display-4 font-weight-light">Our team</h2>
+        </div>
+      </div>
+      <div class="row align-items-center justify-content-center fourth-part">
+        <div
+          class="col-6 col-lg-2 col-md-4 col-sm-4  offset-md-2 offset-sm-2 offset-3 offset-lg-1"
+        >
+          <img
+            src="https://bootstrapious.com/i/snippets/sn-about/avatar-4.png"
+            alt=""
+            width="100"
+            class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <h5 class="mb-0">Manuel Eli</h5>
+          <span class="small text-uppercase text-muted">CEO - Founder</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item">
+              <a href="#" class="social-link"
+                ><i class="fa fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="social-link"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="col-6 col-lg-2 col-md-4  col-sm-4 offset-lg-0 offset-md-0 offset-3 offset-sm-0"
+        >
+          <img
+            src="https://bootstrapious.com/i/snippets/sn-about/avatar-3.png"
+            alt=""
+            width="100"
+            class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <h5 class="mb-0">Samuel Hardy</h5>
+          <span class="small text-uppercase text-muted">CEO - Founder</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item">
+              <a href="#" class="social-link"
+                ><i class="fa fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="social-link"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class=" col-6 col-lg-2 col-md-4 col-sm-4 offset-md-2 offset-lg-0 offset-3 offset-sm-2"
+        >
+          <img
+            src="https://bootstrapious.com/i/snippets/sn-about/avatar-1.png"
+            alt=""
+            width="100"
+            class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <h5 class="mb-0">John Tarly</h5>
+          <span class="small text-uppercase text-muted">CEO - Founder</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item">
+              <a href="#" class="social-link"
+                ><i class="fa fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="social-link"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+        <div
+          class="col-6 col-lg-2 col-md-4 col-sm-4 offset-lg-0 offset-md-0 offset-3 offset-sm-0"
+        >
+          <img
+            src="https://bootstrapious.com/i/snippets/sn-about/avatar-2.png"
+            alt=""
+            width="100"
+            class="img-fluid rounded-circle mb-3 img-thumbnail shadow-sm"
+          />
+          <h5 class="mb-0">Tom Sunder</h5>
+          <span class="small text-uppercase text-muted">CEO - Founder</span>
+          <ul class="social mb-0 list-inline mt-3">
+            <li class="list-inline-item">
+              <a href="#" class="social-link"
+                ><i class="fa fa-facebook-f"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="social-link"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="social-link"
+                ><i class="fa fa-instagram"></i
+              ></a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="social-link"><i class="fa fa-linkedin"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>made by dulea iustina</footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
