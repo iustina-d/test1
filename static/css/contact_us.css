@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "cinzel", serif;
+  box-sizing: border-box;
+}
+ul li{
+  text-decoration: none;
+  list-style-type: none;
+}
+nav{
+  position: fixed;
+  width: 100vw;
+  padding: 20px;
+  background-color: #fff;
+}
+nav a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.558);
+  font-size: 20px;
+  font-weight: bold;
+}
+nav .cart-container{
+  position: relative;
+}
+nav .cart-icon,nav .user-icon{
+  font-size: 16px;
+}
+nav .cart-container .cart-item-count{
+  position: absolute;
+  bottom: 5px;
+  left:26px;
+  font-size: 12px;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+
+}
+nav .e-links{
+  display: none;
+}
+nav .e-link:hover{
+  color:#000
+}
+nav .side-menu{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 150px;
+  text-align: center;
+  padding-left: 0px;
+}
+nav .e-links:hover .side-menu{
+  display: block;
+}
+nav .e-links:hover .side-menu.e-link{
+  display: block;
+} 
+nav .link:hover{
+  color: #000;
+}
+.page-content{
+  background-color: #fff;
+  padding:160px 0px 100px;
+  height: 94.7vh;
+  width: 90%;
+}
+.left-part h2{
+  padding-bottom: 30px;
+  font-weight: bold;
+}
+.left-part input{
+  border:none;
+  border-bottom: 2px solid #f1f1f1;
+  padding: 20px 50px 20px 10px;
+}
+.left-part input:focus{
+  outline: none;
+  border-color: #000;
+}
+.left-part textarea{
+  border:none;
+  border-bottom: 2px solid #f1f1f1;
+  text-align: start;
+  padding: 10px 250px 50px 10px;
+}
+.left-part textarea:focus{
+  border-color: #000;
+  outline: none;
+}
+.left-part .btn{
+  margin-top: 20px;
+  background-color: #000;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 25px;
+  transition: all 0.2s ease-in-out;
+}
+.left-part .btn:hover{
+  background-color: #3d3f56;
+}
+.right-part{
+  padding: 70px 0px 0px 30px;
+}
+.right-part>h2{
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.right-part .info{
+  margin-top: 10px;
+}
+.right-part h3{
+  display: inline-block;
+  font-size: 14px;
+}
+.right-part .icon{
+  display: inline-block;
+}
+footer{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 13px;
+}
+@media (max-width: 1805px) {
+  nav .link{
+    display: none;
+  }
+  nav .e-links{
+    display: block;
+  }
+}
+@media (max-width: 1094px) {
+  .left-part h2,.right-part h2{
+    font-size: 20px;
+  }
+  .right-part h3{
+    font-size: 12px;
+  }
+  .left-part input{
+    padding-right:40px ;
+  }
+  .left-part textarea{
+    padding-right: 150px;
+  }
+  .right-part {
+    padding-left: 0px;
+  }
+}

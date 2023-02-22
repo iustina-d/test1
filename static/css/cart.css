@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "cinzel", serif;
+  box-sizing: border-box;
+}
+body {
+  padding: 5rem;
+  background-color: rgb(237 237 237);
+}
+.x-close{
+  text-decoration: none;
+}
+.fa-xmark {
+  display: flex;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.776);
+}
+h1{
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.table-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+}
+.table-img:hover {
+  transform: scale(1.2);
+}
+
+.container a .fa-xmark {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 2rem;
+}
+.fa-xmark:hover,
+.fa-arrow-up:hover,
+.fa-arrow-down:hover {
+  color: rgb(124 121 121);
+}
+form {
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+form h2 {
+  font-size: 2rem;
+  margin-right: 2rem;
+}
+form .pay-method {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+form .pay-method .btn {
+  background-color: #3d3f56;
+  color: #fff;
+  padding: 10px 40px;
+}
+form .pay-method h3 {
+  margin: 1rem;
+  font-size: 26px;
+}
+@media (max-width:1200px){
+  form h2{
+    font-size: 25px;
+  }
+  form .pay-method h3{
+    font-size: 19px;
+  }
+}
+@media (max-width:992px){
+  form h2{
+    font-size: 20px;
+  }
+  form .pay-method h3{
+    display: none;
+  }
+}

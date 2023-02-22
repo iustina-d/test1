@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "cinzel", serif;
+  box-sizing: border-box;
+}
+ul li{
+  text-decoration: none;
+  list-style-type: none;
+}
+nav{
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  font-family: "cinzel", serif;
+  background-color: #fff;
+}
+nav a{
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.558);
+  font-size: 20px;
+  font-weight: bold;
+}
+nav .cart-container{
+  position: relative;
+}
+nav .cart-icon,nav .user-icon{
+  font-size: 16px;
+}
+nav .cart-container .cart-item-count{
+  position: absolute;
+  text-align: center;
+  bottom: 5px;
+  left:26px;
+  font-size: 12px;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+}
+nav .e-links{
+  display: none;
+}
+nav .e-link:hover{
+  color:#000
+}
+nav .side-menu{
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  width: 150px;
+  text-align: center;
+  padding-left: 0px;
+}
+nav .e-links:hover .side-menu{
+  display: block;
+}
+nav .e-links:hover .side-menu.e-link{
+  display: block;
+} 
+nav .link:hover{
+  color: #000;
+}
+.page-content{
+  background-color: #fff;
+  padding:100px 0px;
+}
+.page-content .first-part,.page-content .second-part{
+  padding-bottom: 80px;
+}
+.page-content .text-part{
+  padding: 50px;
+  text-align: center;
+  
+}
+.page-content .text-part h2{
+  font-weight: bold;
+}
+.page-content .image-part{
+  padding: 50px;
+}
+footer{
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 13px;
+}
+@media (max-width: 1805px) {
+  nav .link{
+    display: none;
+  }
+  nav .e-links{
+    display: block;
+  }
+}
+@media (max-width: 991px) and (min-width:500px) {
+  .page-content .text-part h2{
+    font-size:36px ;
+  }
+  .page-content .text-part p{
+    font-size: 18px;
+  }
+}
+@media (max-width: 500px) {
+  .page-content .text-part h2{
+    font-size:20px ;
+  }
+  .page-content .text-part p{
+    font-size: 12px;
+  }
+}

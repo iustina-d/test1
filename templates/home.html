@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel&family=Lato&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/ae97ef602e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="/static/css/home.css" />
+    <title>Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="container-fluid">
+        <div class="col-1 e-links">
+          <i class="fa-solid fa-bars"></i>
+          <ul class="side-menu">
+            <li><a href="/" class="e-link">home</a></li>
+            <li><a href="/search" class="e-link">products</a></li>
+            <li><a href="/about-us" class="e-link">about</a></li>
+            <li>
+              <a href="/contact-us" class="e-link">contact</a>
+            </li>
+            <li>
+              <a href="{{ url_for('cart') }}" class="e-link cart">
+                <i class="fa-solid fa-cart-shopping cart-icon"></i
+              ></a>
+            </li>
+            <li>
+              <a href="{{ url_for('login') }}" class="e-link admin">
+                <i class="fa-solid fa-user user-icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+        <div class="row navbar-container justify-content-end">
+          <div class="col-1"><a href="/" class="link">home</a></div>
+          <div class="col-1"><a href="/search" class="link">products</a></div>
+          <div class="col-1"><a href="/about-us" class="link">about</a></div>
+          <div class="col-1">
+            <a href="/contact-us" class="link">contact</a>
+          </div>
+          <div class="col-1 offset-2 cart-container">
+            <a href="{{ url_for('cart') }}" class="link">
+              <i class="fa-solid fa-cart-shopping cart-icon"></i>
+              <span class="cart-item-count">00</span></a
+            >
+          </div>
+          <div class="col-1">
+            <a href="{{ url_for('login') }}" class="link">
+              <i class="fa-solid fa-user user-icon"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container-fluid page-content">
+      <div class="row header-container">
+        <div class="col">
+          <h1 class="header-heading"><span>Cover</span> Ajax</h1>
+        </div>
+      </div>
+      <div class="row best-selling-products-section-title-container">
+        <div class="col best-selling-products-title-container">
+          <h1 class="best-selling-products-title">best selling products</h1>
+        </div>
+      </div>
+      <div
+        class="row best-selling-products-section-products-container justify-content-center"
+      >
+        <div class="col-lg-2 col-md-5 product-card">
+          <img
+            src="/static/images/home/best-sel-img1.webp"
+            alt=""
+            class="product-img"
+          />
+          <p class="product-name">
+            corner sofa<img
+              src="/static/images/home/arrow.png"
+              alt="arrow-image"
+              class="arrow-img"
+            />
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-5 product-card">
+          <img
+            src="/static/images/home/best-sel-img2.webp"
+            alt=""
+            class="product-img"
+          />
+          <p class="product-name">
+            bed
+            <img
+              src="/static/images/home/arrow.png"
+              alt="arrow-image"
+              class="arrow-img"
+            />
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-5 product-card">
+          <img
+            src="/static/images/home/best-sel-img3.webp"
+            alt=""
+            class="product-img"
+          />
+          <p class="product-name">
+            living room furniture
+            <img
+              src="/static/images/home/arrow.png"
+              alt="arrow-image"
+              class="arrow-img"
+            />
+          </p>
+        </div>
+        <div class="col-lg-2 col-md-5 product-card">
+          <img
+            src="/static/images/home/best-sel-img4.webp"
+            alt=""
+            class="product-img"
+          />
+          <p class="product-name">
+            wardrobe
+            <img
+              src="/static/images/home/arrow.png"
+              alt="arrow-image"
+              class="arrow-img"
+            />
+          </p>
+        </div>
+      </div>
+      <div class="row mid-section-container">
+        <div class="col mid-container">
+          <div class="mid-text-container">
+            <h1 class="mid-section-title">
+              premium quality in <span>affordable</span> price
+            </h1>
+            <p class="mid-section-text">
+              We try to give our customers the opportunity to choose from the
+              best products on the market at an affordable price.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="row image-collage-section-container">
+        <div class="col image-collage-container">
+          <div class="images-container">
+            
+            <img
+              src="/static/images/home/collage-img1.jpg"
+              class="collage-img"
+              alt=""
+            />
+            <img
+              src="/static/images/home/collage-img2.jpg"
+              class="collage-img"
+              alt=""
+            />
+            <img
+              src="/static/images/home/collage-img3.webp"
+              class="collage-img"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="row review-section-title-container">
+        <div class="col review-title-container">
+          <h1 class="review-section-title">
+            what our <span>customers</span> says about us
+          </h1>
+        </div>
+      </div>
+      <div class="row review-section-content-container">
+        <div class="col-lg-3 col-md-6 review-card">
+          <div class="user-dp" data-rating="4.9">
+            <img src="/static/images/home/review-img1.jpg" alt="" />
+          </div>
+          <h2 class="review-account-name">Lenuta</h2>
+          <p class="review">
+            I recommend, I am super satisfied and delighted with the furniture!
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 review-card">
+          <div class="user-dp" data-rating="4.9">
+            <img src="/static/images/home/review-img2.jpg" alt="" />
+          </div>
+          <h2 class="review-account-name">Giorgian</h2>
+          <p class="review">
+            The quality speaks for itself, thank you for your promptness! Super
+            satisfied!
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 review-card">
+          <div class="user-dp" data-rating="4.9">
+            <img src="/static/images/home/review-img3.jpg" alt="" />
+          </div>
+          <h2 class="review-account-name">Vasile</h2>
+          <p class="review">
+            Good quality products! Reasonable price, well estimated delivery
+            time. I'm pleased.
+          </p>
+        </div>
+        <div class="col-lg-3 col-md-6 review-card">
+          <div class="user-dp" data-rating="4.9">
+            <img src="/static/images/home/review-img4.jpg" alt="" />
+          </div>
+          <h2 class="review-account-name">Alexandra</h2>
+          <p class="review">
+            Excellent ratio, quality for the price. The furniture is very
+            beautiful, exactly as in the pictures on the website, excellent
+            delivery service.
+          </p>
+        </div>
+      </div>
+      <div class="row end-section-container">
+        <div class="col end-container">
+          <div class="end-text-container">
+            <h1 class="end-section-title">order <span>now</span></h1>
+            <p class="end-section-text">
+              All orders are delivered free nationwide to your doorstep. For an
+              additional fee of 70 lei, the courier can bring the furniture to
+              your home.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>made by dulea iustina</footer>
+    <script src="/static/js/home.js"></script>
+    <script
+    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+    integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
